@@ -51,7 +51,7 @@ Description
          Similarly any problem in the accessing the file terminal will throw an error.
    
 
-   -L,  This command outputs the last 10 lines either from the default file or the specified file. If the -n argument is
+         -L,  This command outputs the last 10 lines either from the default file or the specified file. If the -n argument is
         specified, the value given by the user should be used as the number of lines rather than character.
         if the file contains fewer than 10 lines, output the entire the file contents.
  
