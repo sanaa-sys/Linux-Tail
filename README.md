@@ -22,23 +22,23 @@ Description
    print the last part of the file either from the provided file or the default file. 
    Last part can be specified in the terms of the characters and the number of lines.
   
-Commands:
+    Commands:
    
-   ./ctail, it reads default file "logfile.txt" from the directory and prints the last 200 characters of the file.
-            if the file contains fewer than 200 characters, output the entire the file contents.
-            To compile the program, a user can use it on either default file or specified file name.
-            e.g ./ctail                : print the last 200 characters from the default file
-                ./ctail filename       : print the last 200 characters from the specified file, where the file should be in the same directory.
+        ./ctail, it reads default file "logfile.txt" from the directory and prints the last 200 characters of the file.
+        if the file contains fewer than 200 characters, output the entire the file contents.
+        To compile the program, a user can use it on either default file or specified file name.
+        e.g ./ctail                : print the last 200 characters from the default file
+            ./ctail filename       : print the last 200 characters from the specified file, where the file should be in the same directory.
  
     
-   -n,  take a positive integer number as an argument after this command
+        -n,  take a positive integer number as an argument after this command
         This command outputs either number of lines or number of character it depends upon the use
  
-       To compile the program, a user can use it on either default file or specified file name.
-       e.g ./ctail -n number 
-           ./ctail filename -n number  
-       where number is the non-negative number and filename is the name of the file which is present in the same directory.
-         if the file contains fewer than the number of characters, output the entire the file contents.
+        To compile the program, a user can use it on either default file or specified file name.
+        e.g ./ctail -n number 
+            ./ctail filename -n number  
+        where number is the non-negative number and filename is the name of the file which is present in the same directory.
+        if the file contains fewer than the number of characters, output the entire the file contents.
 
         For example, to get the last 20 characters from the default use command should look like ./ctail -n 20
         Similarly for the last 20 characters from the specified file name  ./ctail filename -n 20
