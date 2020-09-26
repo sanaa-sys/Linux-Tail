@@ -1,0 +1,30 @@
+PURPOSE
+The purpose of ctail utility is to print last few characters of a long file.
+HOW TO USE
+The default settings allow user to see last 200 characters from logfile.txt.If the file has less than 200 characters, the whole file will be printed.
+To compile and execute type the following commands
+First change the directory to the one where your file is using cd folder_name where folder_name is the name of folder each after slash.
+For example is folder is in ~/Documents/FIT2100/assignment1 type cd Documents then cd FIT2100 then cd assignment1.
+Then type the following commands to compile and execute
+To compile:gcc ctail.c -o ./ctail
+To execute:./ctail
+The output will be shown depending on number of characters in file.
+There is also an option to specify the file name and the last number of characters to be read from file which has to be a positive integer
+To specify number of characters while executing type ./ctail -n no_of_characters
+Eg-./ctail -n 5 where last 5 characters will be printed from logfile.txt
+If file has less than no of characters specified the whole file will be printed
+To specify file name type ./ctail filename -n 20 where 20 characters will be printed from filename
+To print last 200 characters just type ./ctail filename
+To print last 10 lines from logfile.txt type:./ctail -L
+To print last 10 lines from file of your choice type:./ctail filename -L
+To print last any number of lines from file of your choice type:./ctail filename -L -n no_of_lines
+POSSIBLE ERRORS
+If file cannot be opened due to wrong spelling or not being in same directory as utility the following statement will be printed in terminal:"Can't open file"
+If there is a mistake in order of arguments or the wrong arguments are typed while printing last number of characters(negative integer for number of characters or typing -N instead of .n) the following statement will be printed in terminal:Enter -n then enter non-negative integer for number of characters
+If there is a mistake in order of arguments or the wrong arguments are typed while printing last number of lines(negative integer for number lines or wrong order of arguments) the following statement will be printed in terminal:Enter -L then -n enter non-negative integer for number of lines
+AUTHOR
+Ayesha Ali-29587778
+LAST MODIFIED
+29/08/2019
+
+
