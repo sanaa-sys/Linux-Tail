@@ -22,7 +22,7 @@ Description
    print the last part of the file either from the provided file or the default file. 
    Last part can be specified in the terms of the characters and the number of lines.
   
-   Commands:
+Commands:
    
    ./ctail, it reads default file "logfile.txt" from the directory and prints the last 200 characters of the file.
             if the file contains fewer than 200 characters, output the entire the file contents.
@@ -59,7 +59,7 @@ Description
         e.g    ./ctail -L             : Print the last 10 lines from the default file.
                ./ctail filename -L      : Print the last 10 lines from the specified file, where the file should be in the same directory.
  
-         when -n is added in the command for the number of lines if the file contains fewer than the number of lines, output the entire the file contents, here the number of lines is the non-negative number it is always specified after the -n. 
+         when -n is added in the command for the number of lines if the file contains fewer than the number of lines, output the entire the file contents, here the number of              lines is the non-negative number it is always specified after the -n. 
               ./ctail -L -n number              : Print the last number of lines from the default file.
               ./ctail filename -L -n number     : Print the last number of lines from the specified file, where the file should be in the same directory
 
